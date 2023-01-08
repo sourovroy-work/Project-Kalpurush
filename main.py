@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return jsonify({"Welcome to your Flask app!"})
+    return jsonify("Welcome to your Project Kalpurush!!!")
 
 @app.route('/match/<word>', methods=['GET'])
 def get_match(word):
@@ -14,7 +14,6 @@ def get_match(word):
     for file in get_all_database_files():
         result.extend(matcher.get_match(file, word))
     return json.dumps(list(set(result)))
-
 
 @app.route('/all', methods=['GET'])
 def get_all():
