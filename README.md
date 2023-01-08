@@ -21,3 +21,12 @@ This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a
 
 - Install Python requirements `pip install -r requirements.txt`
 - Start the server for development `python3 main.py`
+
+## Virtual Environment
+Description: venv makes sure all the installed packages are present as a container
+
+Create: `python -m venv pk-venv`
+
+Activate: `pk-venv\Scripts\activate`
+
+Deactivate: `deactivate`
